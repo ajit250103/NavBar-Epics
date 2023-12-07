@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #EE7214;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 25px;
+    height: 80px;
+    align-items: center;
+}
+.logo h1{
+    height: 40px;
+    /* text-decoration: none; */
+
+}
+.logo a{
+    text-decoration: none;
+}
+.search input{
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+
+}
+.icons{
+    text-align: right;
+}
+
+.icons .fa{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0px 10px;
+    transition: 0.6s;
+}
+.fa:hover {
+    color: black;
+}
+.links{
+    background-color: #007bff;
+    /* display: none; */
+    height: 0;
+    transition: 0.6s;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+}
+.showmylinks{
+    height: 50vh;
+    /* display: block; */
+
+}
+@media only screen and (max-width:600px) {
+    .header{
+        grid-template-columns: auto auto;
+        padding: 10px 7px;
+        height: auto;
+        padding-top: 10px;
+    }
+    .logo img{
+        width: 90px;
+        height: auto;
+    }
+    .search{
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+    .icons fa{
+        padding: 5px;
+    }
+    
+}
